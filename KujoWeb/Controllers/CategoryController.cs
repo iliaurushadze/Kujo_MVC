@@ -36,8 +36,9 @@ namespace KujoWeb.Controllers
                 ModelState.AddModelError("name", "The DisplayOrder cannot exatly match the Name.");
             }
             if (ModelState.IsValid) {
-                _db.Categories.Add(obj);
+                _db.Categories.Add(obj);               
                 _db.SaveChanges();
+                TempData["Success"] = "Category Created Successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -72,8 +73,9 @@ namespace KujoWeb.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(obj);
+                _db.Categories.Update(obj);                
                 _db.SaveChanges();
+                TempData["Success"] = "Category Updated Successfully";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -111,7 +113,8 @@ namespace KujoWeb.Controllers
 
             _db.Categories.Remove(obj);
                 _db.SaveChanges();
-                return RedirectToAction("Index");
+            TempData["Success"] = "Category Deleted Successfully";
+            return RedirectToAction("Index");
         }
     }
 }
