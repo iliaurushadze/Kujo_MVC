@@ -16,4 +16,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kujo.DataAccess\Kujo.DataAccess.csproj" />
+    <ProjectReference Include="..\Kujo.Models\Kujo.Models.csproj" />
+  </ItemGroup>
+
 </Project>

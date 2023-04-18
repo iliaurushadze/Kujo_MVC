@@ -1,4 +1,4 @@
-namespace KujoWeb.Models
+namespace Kujo.Models
 {
     public class ErrorViewModel
     {

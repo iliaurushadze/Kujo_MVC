@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace KujoWeb.Models
+namespace Kujo.Models
 {
     public class Category
     {
@@ -12,7 +12,7 @@ namespace KujoWeb.Models
         public string Name { get; set; }
 
         [DisplayName("Display Order")]
-        [Range(1, 200, ErrorMessage ="Display Order Must Be between 1 And 100 Only!!")]
+        [Range(1, 200, ErrorMessage = "Display Order Must Be between 1 And 100 Only!!")]
         public int DisplayOrder { get; set; }
 
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;

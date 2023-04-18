@@ -1,7 +1,7 @@
-﻿using KujoWeb.Models;
+﻿using Kujo.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace KujoWeb.Data
+namespace Kujo.DataAccess
 {
     public class ApplicationDbContext : DbContext
     {

@@ -1,4 +1,4 @@
-﻿using KujoWeb.Models;
+﻿using Kujo.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

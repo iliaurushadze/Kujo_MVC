@@ -1,5 +1,5 @@
-﻿using KujoWeb.Data;
-using KujoWeb.Models;
+﻿using Kujo.DataAccess;
+using Kujo.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KujoWeb.Controllers

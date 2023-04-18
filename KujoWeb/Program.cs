@@ -1,4 +1,4 @@
-using KujoWeb.Data;
+using Kujo.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
